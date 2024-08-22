@@ -1,5 +1,5 @@
 body {
-    font-family: 'Raleway', serif;
+    font-family: 'Raleway', sans-serif;
   text-align: center;
   background-color: #f0f0f0;
   margin: 0;
@@ -81,7 +81,7 @@ button:hover {
 }
 
 #certificateContent {
-  font-family: 'Raleway', serif;
+  font-family: 'Raleway', sans-serif;
   color: #333;
   padding: 20px;
   background-color: #f9f9f9;
@@ -113,3 +113,9 @@ button:hover {
   background-color: #5d5f5e;
 }
 
+#certificateContent img {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
