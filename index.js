@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = ;
-      const courseNameInput = ; 
+      const personalMessageInput = document.getElementById('personalMessage');
+      const courseNameInput = document.getElementById('courseName'); 
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
@@ -25,8 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   
       // 🚨 Generate certificate content dynamically
-      certificateContent. = `
+      certificateContent.innerHTML = `
+      <h2>Certificate of Achievement</h2>
+      <p>This is to certify that</p>
       <h3>${studentName}</h3>
+      <p>has almost completed the</p>
+      <h3>${courseName}</h3>
+      <p>with legendary perseverance and world class bad-assery for never giving up</p>
+      <img src="logo.png" alt="CodeSpace logo"/>
+      <p>${personalMessage}</p>
+
     `;
     
       //  Display the modal
@@ -43,4 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
       
     });
   });
+
+  
   
